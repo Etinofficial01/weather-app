@@ -6,18 +6,35 @@
 }
 
 body{
-    background: #222;
+    background-image: url(images/bimage.jpg);
+    background-position: center;
+    background-size: inherit;
+    background-repeat: no-repeat;
 }
 
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(1rem);
     color: #fff;
-    margin: 100px auto 0;
+    margin: 60px auto 20px;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+}
+
+.header{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.header span{
+    text-transform: uppercase;
 }
 
 .search{
@@ -107,7 +124,18 @@ body{
     color: red;
 }
 
+footer{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
 @media (max-width: 570px){
+    .header{
+        font-size: 1.5rem;
+    }
+    .header span{
+        text-transform: uppercase;
+    }
     .search input{
         border: 0;
         outline: 0;
@@ -158,12 +186,18 @@ body{
         margin-right: 8px;
     }
 
+
     .col-2{
-        margin-left: 10px;
+        margin-left: 20px;
     }
+
     .humidity, .wind{
-        font-size: 20px;
+        font-size: 17px;
         margin-top: -6px;
+    }
+
+    .sm{
+        font-size: 0.9rem;
     }
 
 }
